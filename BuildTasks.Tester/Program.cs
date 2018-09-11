@@ -10,6 +10,8 @@ namespace WebEssentials.BuildTasks.Tester
     class Program
     {
         static void Main(string[] args)
+		
+		
         {
             var task = new NodeInstaller() { BuildEngine = new Engine() };
             task.Execute();
