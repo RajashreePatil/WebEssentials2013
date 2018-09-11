@@ -30,7 +30,11 @@ using System.Diagnostics.CodeAnalysis;
 
 // DispatcherPriorityAwaiter is used only for await and does not follow normal rules.  (copied from .Net source)
 [assembly: SuppressMessage("Microsoft.Performance", "CA1815:OverrideEqualsAndOperatorEqualsOnValueTypes", Scope = "type", Target = "MadsKristensen.EditorExtensions.DispatcherPriorityAwaitable")]
+
+
 [assembly: SuppressMessage("Microsoft.Performance", "CA1815:OverrideEqualsAndOperatorEqualsOnValueTypes", Scope = "type", Target = "MadsKristensen.EditorExtensions.DispatcherPriorityAwaiter")]
+
+
 [assembly: SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic", Scope = "member", Target = "MadsKristensen.EditorExtensions.DispatcherPriorityAwaiter.#IsCompleted")]
 [assembly: SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic", Scope = "member", Target = "MadsKristensen.EditorExtensions.DispatcherPriorityAwaiter.#GetResult()")]
 [assembly: SuppressMessage("Microsoft.Design", "CA1024:UsePropertiesWhereAppropriate", Scope = "member", Target = "MadsKristensen.EditorExtensions.DispatcherPriorityAwaitable.#GetAwaiter()")]
