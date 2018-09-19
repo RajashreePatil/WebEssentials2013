@@ -16,7 +16,10 @@ namespace WebEssentials.BuildTasks
 {
     public class NodeInstaller : Microsoft.Build.Utilities.Task
     {
-        private List<string> toRemove = new List<string>()
+		private List<string> toRemove1 = new List<string>();
+		private List<string> toRemove2 = new List<string>();
+		private List<string> toRemove3= new List<string>();
+        private List<string> toRemove4= new List<string>();
         {
             "*.md",
             "*.markdown",
