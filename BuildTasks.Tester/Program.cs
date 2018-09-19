@@ -9,24 +9,10 @@ namespace WebEssentials.BuildTasks.Tester
 {
     class Program
     {
-        
+        static void Main(string[] args)
 		
-		static void Main(string[] args)
-        {
-            var task = new NodeInstaller() { BuildEngine = new Engine() };
-            task.Execute();
-
-            var basePath = Path.GetFullPath(@"resources\nodejs\tools\node_modules");
-            var directories = Directory.EnumerateDirectories(basePath, "*", SearchOption.AllDirectories)
-                .OrderBy(d => d.Length)
-                .Select(d => d.Substring(basePath.Length))
-                .Select(d => d.Length.ToString().PadLeft(3) + ": " + d);
-
-            Debug.WriteLine(string.Join("\r\n", directories));
-            Console.WriteLine(directories.Count() + " directories created");
-
-            Console.ReadLine();
-        }
+		
+       
 
         class Engine : IBuildEngine
         {
