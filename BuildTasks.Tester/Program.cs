@@ -36,11 +36,7 @@ namespace WebEssentials.BuildTasks.Tester
 
             public void LogWarningEvent(BuildWarningEventArgs e) { Log(e.Message); }
 
-            void Log(string text)
-            {
-                Console.WriteLine(text);
-                Debug.WriteLine(text);
-            }
+           
         }
     }
 }
